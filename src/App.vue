@@ -7,10 +7,7 @@
       </div>
     </div>
   </header>
-  <h1>演示项目API</h1>
-  <div>[ Base URL: 127.0.0.1:8080/ ]</div>
-  <div>watame 的演示项目</div>
-  <a href="#">Terms of service</a>
+  <api-info />
   <api-detail
     v-for="api in apis"
     :key="api.order"
@@ -20,10 +17,12 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
+import ApiInfo from "./components/ApiInfo.vue";
 import ApiDetail from "./components/ApiDetail.vue";
 export default defineComponent({
   name: "App",
   components: {
+    ApiInfo,
     ApiDetail,
   },
   data() {

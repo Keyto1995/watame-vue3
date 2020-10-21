@@ -1,8 +1,10 @@
 <template>
-  <h1>{{ info.title }}</h1>
-  <div>Base URL: [ {{ info.baseUrl }} ]</div>
-  <div>{{ info.desc }}</div>
-  <a class="text-teal-700" :href="info.termsOfServiceUrl">Terms of service</a>
+  <div class="container mx-auto">
+    <h1>{{ info.title }}</h1>
+    <div>Base URL: [ {{ info.baseUrl }} ]</div>
+    <div>{{ info.desc }}</div>
+    <a class="text-teal-700" :href="info.termsOfServiceUrl">Terms of service</a>
+  </div>
 </template>
 
 <script lang="ts">

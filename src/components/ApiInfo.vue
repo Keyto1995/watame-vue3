@@ -9,8 +9,8 @@
       </a>
     </div>
     <div>
-      <a class="" :href="'mailto:' + info.contact.email">
-        {{ info.contact.name }}'s email: {{ info.contact.email }}
+      <a class="hover:text-teal-700" :href="'mailto:' + info.contact.email">
+        {{ info.contact.name }}'s email
       </a>
     </div>
   </div>

@@ -3,7 +3,16 @@
     <h1>{{ info.title }}</h1>
     <div>Base URL: [ {{ info.baseUrl }} ]</div>
     <div>{{ info.desc }}</div>
-    <a class="text-teal-700" :href="info.termsOfServiceUrl">Terms of service</a>
+    <div>
+      <a class="text-teal-700" :href="info.termsOfServiceUrl">
+        Terms of service
+      </a>
+    </div>
+    <div>
+      <a class="" :href="'mailto:' + info.contact.email">
+        {{ info.contact.name }}'s email: {{ info.contact.email }}
+      </a>
+    </div>
   </div>
 </template>
 
@@ -20,8 +29,8 @@ export default defineComponent({
         version: "1.0.0",
         termsOfServiceUrl: "https://blog.keyto.top",
         contact: {
-          name: "联系人",
-          email: "邮箱地址",
+          name: "Keyto",
+          email: "keyto1995@outlook.com",
         },
       },
     };
